@@ -57,7 +57,7 @@ app.post('/discover', upload.single('file'), async function (req, res, next) {
 
 // Define the function to generate the AI-generated image
 async function generateAIGeneratedImage(options, file) {
-  const openai = new OpenAI({apiKey: "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"});
+  const openai = new OpenAI({apiKey: "USE YOUR KEY"});   //Replace with actual Open API keys
 
   // Replace with your desired prompt and other options
   const num_images = 1;
