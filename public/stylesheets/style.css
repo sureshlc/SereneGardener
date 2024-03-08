@@ -1,0 +1,155 @@
+body {
+    background-image: url('/images/Green-Leaf-PNG-Image-File.png');
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: black; /* Set default font color to white */
+}
+.body-discover {
+    background-image: url('/images/samp2.png');
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: black; /* Set default font color to white */
+}
+
+.body-meet {
+    background-image: url('/images/Index_bg.png');
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: black; /* Set default font color to white */
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1,h2 {
+    font-size: 30px; /* Increase font size */
+    text-align: center;
+    text-shadow: 2px 2px 4px white; /* Add black outlining */
+}
+
+p {
+    font-size: 30px; /* Increase font size */
+    text-align: center;
+    text-shadow: 2px 2px 4px white; /* Add black outlining */
+    margin-right: 160px;
+    margin-left: 160px;
+}
+
+.menu {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.menu a {
+    color: black;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+/* Existing styles */
+
+/* New styles for Meet the Team page */
+.team-member {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.team-member img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+.team-member h2 {
+    font-size: 24px; /* Increase font size */
+    text-shadow: 1px 1px 2px white; /* Add black outlining */
+}
+
+.team-member p {
+    font-size: 20px; /* Increase font size */
+    text-shadow: 1px 1px 2px white; /* Add black outlining */
+}
+
+/* Navigation styles */
+.navigation {
+    background-color: #fcfbf4; /* Set background color */
+    text-align: center; /* Center align the navigation links */
+    padding: 0; /* Remove padding */
+}
+
+.navigation a {
+    display: inline-block; /* Display the links inline */
+    font-size: 30px;
+    color: black;
+    text-decoration: none;
+    padding: 20px 40px; /* Add padding to the links */
+    transition: background-color 0.3s; /* Smooth transition effect */
+}
+
+.navigation a:hover {
+    background-color: #555; /* Change background color on hover */
+}
+
+/* Form styles */
+form {
+    margin-top: 20px; /* Add space between navigation and form */
+}
+
+.form-group {
+    margin-bottom: 20px; /* Add space between form groups */
+    font-size: larger;
+    font-weight: bold;
+}
+
+/* Form label styles */
+label {
+    display: block; /* Display labels as block elements */
+    margin-bottom: 5px; /* Add space below labels */
+    text-shadow: 1px 1px 2px white; /* Add black outlining */
+}
+
+/* Form input styles */
+input[type="text"],
+input[type="number"],
+select {
+    width: 100%; /* Set input and select width to 100% */
+    padding: 8px; /* Add padding to inputs and selects */
+    border: 1px solid #ccc; /* Add a border to inputs and selects */
+    border-radius: 4px; /* Add border-radius to inputs and selects */
+    box-sizing: border-box; /* Ensure inputs and selects include padding and border in width calculation */
+    text-shadow: 1px 1px 2px white; /* Add black outlining */
+}
+
+/* Form file input styles */
+input[type="file"] {
+    width: auto; /* Reset width for file input */
+}
+
+/* Submit button styles */
+button[type="submit"] {
+    background-color: #4CAF50; /* Set background color for submit button */
+    color: black; /* Set text color for submit button */
+    padding: 10px 20px; /* Add padding to submit button */
+    border: none; /* Remove border from submit button */
+    border-radius: 4px; /* Add border-radius to submit button */
+    cursor: pointer; /* Set cursor to pointer for submit button */
+    text-shadow: 1px 1px 2px white; /* Add black outlining */
+}
+
+/* Hover styles for submit button */
+button[type="submit"]:hover {
+    background-color: #45a049; /* Change background color on hover for submit button */
+}

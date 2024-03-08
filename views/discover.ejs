@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Discover - SereneGardens</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+</head>
+<body class="body-discover">
+    <div class="container">
+        <!-- Navigation links -->
+        <div class="navigation">
+            <a href="/">Home</a>
+            <a href="/meet-the-team">Meet The Team</a>
+        </div>
+        <h1>Ask Serene Gardner</h1>
+        <!-- Discover form -->
+        <h2>Tell us about your garden</h2>
+        <form id="discoverForm" action="/discover" method="post">
+            <div class="form-group">
+                <label for="options">Select your option:</label>
+                <select id="options" name="options" class="form-control" multiple>
+                    <option value="ferns, salal, Oregon grape">Native Plant Gardens</option>
+                    <option value="apple trees, berry bushes, leafy greens, and herbs">Edible Gardens</option>
+                    <option value="composting, mulching">Sustainable Landscaping</option>
+                    <option value="koi ponds, stone lanterns, bamboo fences, and moss-covered stones, combined with traditional plants like Japanese maples, azaleas, and cherry blossoms">Japanese Gardens</option>
+                    <option value="Rocky garden landscape">Rock Gardens and Alpine Plants</option>
+                    <option value="Garden feature natural wildlife">Wildlife-Friendly Gardens</option>
+                    <option value="Hardscaping landscaping">Hardscaping</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="file">Upload a file:</label>
+                <input type="file" id="file" name="file" accept=".jpg, .jpeg, .png">
+            </div>
+            <div class="form-group">
+                <label for="length">Garden Length (in feet):</label>
+                <input type="number" id="length" name="length" min="0">
+            </div>
+            <div class="form-group">
+                <label for="width">Garden Width (in feet):</label>
+                <input type="number" id="width" name="width" min="0">
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+        <script
+        src="https://www.chatbase.co/embed.min.js"
+        chatbotId="fmGd7dtjohAopeyf2VgGa"
+        domain="www.chatbase.co"
+        defer>
+    </script>
+    </div>
+</body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SereneGardens</title>
+  <link rel="stylesheet" href="/stylesheets/style.css" />
+  <style>
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 100%; /* Limit the width of the slideshow */
+      max-height: 50%;
+      width: auto; /* Allow the width to adjust proportionally */
+      height: auto; /* Allow the height to adjust proportionally */
+      position: relative;
+      margin: 20px auto; /* Center the slideshow */
+      overflow: hidden; /* Hide overflow to prevent image overflow */
+    }
+
+    /* Hide all slides by default */
+    .mySlides {
+      display: none;
+    }
+
+    /* Next & previous buttons */
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 16px;
+      margin-top: -22px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover, .next:hover {
+      background-color: rgba(0,0,0,0.8);
+    }
+
+    /* Caption text */
+    .text {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+      text-shadow: 2px 2px 4px black; /* Add black outlining */
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .active, .dot:hover {
+      background-color: #717171;
+    }
+
+    /* Add some margin to the navigation links */
+    .navigation {
+      margin-bottom: 20px;
+    }
+
+    /* Testimonial styling */
+    .testimonial {
+      font-size: x-large;
+      text-align: center;
+      text-anchor: start;
+      margin-top: 10px;
+      font-style: italic;
+      text-shadow: 2px 2px 4px white; /* Add black outlining */
+      color: black;
+    }
+    /* CSS */
+    .testimonial-image {
+      max-width: 100%; /* Set maximum width to 100% */
+      height: auto; /* Allow the height to adjust proportionally */
+    }
+
+
+  </style>
+  <div class="navigation">
+    <a href="/discover">Discover</a>
+    <a href="/meet-the-team">Meet The Team</a>
+  </div>
+<head class="navigation">
+  <h1>Welcome to Serene Gardens</h1>
+    <p>SereneGardeners Innovations envisions transforming every outdoor space into a sanctuary of peace, beauty, and sustainability. We aim to lead the garden revamp industry by integrating innovative design with ecological practices, fostering environments where nature and human well-being flourish together. Our vision is to cultivate serene landscapes that inspire, rejuvenate, and connect communities with the natural world.</p>
+</head>
+<body>
+  <div class="container">
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+      <!-- Full-width images with number and caption text -->
+      <div class="mySlides">
+        <img src="/images/testimonial1_comb.png" class="testimonial-image">
+        <div class="testimonial">"I was amazed at how accurately the AI captured my vision for a sustainable garden. The personalized recommendations were spot on!" - Raj, Bellevue</div>
+      </div>
+
+      <div class="mySlides">
+        <img src="/images/testimonial2_comb.png" class="testimonial-image">
+        <div class="testimonial">"I never thought I could design a garden that reflects my style so perfectly. The AI suggestions made the whole process a breeze." - Mia, Tacoma</div>
+      </div>
+
+      <div class="mySlides">
+        <img src="/images/testimonial3_comb.png" class="testimonial-image">
+        <div class="testimonial">"This platform is a game-changer for garden design. Seeing the potential of my yard before starting any work saved me so much time and money." Chris, Kirkland</div>
+      </div>
+
+      <div class="mySlides">
+        <img src="/images/testimonial4_comb.png" class="testimonial-image">
+        <div class="testimonial">"Finally, a tool that understands what I want in my garden. The detailed design visualization was incredibly helpful." - Ethan, Redmond</div>
+      </div>
+
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      <script
+      src="https://www.chatbase.co/embed.min.js"
+      chatbotId="fmGd7dtjohAopeyf2VgGa"
+      domain="www.chatbase.co"
+      defer>
+  </script>
+    </div>
+  </div>
+
+  <script>
+    var slideIndex = 0; // Initialize slide index
+    showSlides(); // Call the function to start the slideshow
+  
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      // Hide all slides
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      // Increment slide index
+      slideIndex++;
+      // Reset slide index if it exceeds the number of slides
+      if (slideIndex > slides.length) {
+        slideIndex = 1;
+      }
+      // Display the current slide
+      slides[slideIndex - 1].style.display = "block";
+      // Set a timer to call this function again after 3 seconds
+      setTimeout(showSlides, 6000); // Change the duration as needed
+    }
+  </script>
+  
+</body>
+</html>
